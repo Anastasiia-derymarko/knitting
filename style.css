@@ -1,0 +1,82 @@
+header {
+	width: 100%;
+	height: 100vh;
+ 	background: url(images/1.png);
+ 	background-size: cover;
+ 	background-position: center;
+	position: relative;
+	padding-top: 10px; 
+}
+header li {
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 95px;
+	font-family: 'Just Another Hand', cursive;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: right;
+	color: white;
+	display: inline-block;
+	padding: 0px 23px;
+}
+header li:active, header li:hover {
+	color: #1197a3;
+	cursor: pointer;
+}
+header img{
+	width: 150px;
+}	
+.img-logo {
+	height: 125px;
+	width: 200px;
+	background: url(images/170.130.svg) no-repeat;
+}	 
+.img-logo:hover, .img-logo:active{
+	background: url(images/method-hover.svg) no-repeat;
+	cursor: pointer;
+}
+.strelka {
+	display: inline-block;
+	text-align: center;
+	width: 117px;
+	height: 20px;
+	background: url(images/strelka.svg) no-repeat;
+	position: relative;
+	top: 77vh;
+}
+.strelka:hover, .strelka:active{
+	background: url(images/strelka-hover.svg) no-repeat;
+	cursor: pointer;
+}
+.filter {
+	background: #f5f6f8;
+	padding: 30px 20px;
+	min-height: 50px;
+
+}
+
+.filter-check-mark{
+	padding-left: 70px;
+
+}
+.font-size-check-mark,.button-see-all-products {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Just Another Hand', cursive;
+	letter-spacing: 2px;
+}
+[type="checkbox"]:checked+label:before{
+	border-right: 2px solid #1197a3;
+	border-bottom: 2px solid #1197a3;
+}
+.button-see-all-products {
+	background: #ccd2d3;
+	color: #ffffff;
+	padding: 5px 20px;
+	border: none;
+	display: block;
+	float: right;
+}
+.button-see-all-products:hover,active{
+	background: #1197a3;
+}
