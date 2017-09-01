@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 header {
 	width: 100%;
@@ -18,18 +20,20 @@ header li {
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: right;
-	color: white;
+	color: #ffffff;
 	display: inline-block;
 	padding: 0px 23px;
 }
-header li:active, header li:hover {
+header li:active, header li:hover, header li:visited {
 	color: #1197a3;
 	cursor: pointer;
 }
+
 header img{
 	width: 150px;
 }	
 .img-logo {
+	display: inline-block;
 	height: 125px;
 	width: 200px;
 	background: url(images/170.130.svg) no-repeat;
@@ -98,14 +102,15 @@ header img{
 
 .products-card-one img {
 	width: 100%;
+
 	
 }
 .products-card-one {
 	padding: 15px;
 	font-size: 19px;
-
-
+	margin-bottom: 25px;
 }
+
 .products hr {
 	margin: 30px 0px;
 } 
@@ -120,13 +125,25 @@ header img{
 	padding-top: 10px;
 	margin-top: 10px;
 }
-.products-children {
+h4 {
 	text-transform: uppercase;
 	font-size: 20px;
     text-transform: uppercase;
     font-family: 'Just Another Hand', cursive;
     letter-spacing: 2px;
 }
-.products-children hr{
-	float: left;
+.chevron-hover:hover,active{
+	color: #1197a3;
+	cursor: pointer;
+}
+.fs-and-inst-mar {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.hover:hover,active{
+	color: #1197a3;
+	cursor: pointer;
+}
+ul li{
+	padding-bottom: 5px;
 }
