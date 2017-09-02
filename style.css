@@ -12,7 +12,7 @@ header {
 	position: relative;
 	padding-top: 10px; 
 }
-header li {
+.nav-wrapper li {
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 95px;
@@ -24,12 +24,14 @@ header li {
 	display: inline-block;
 	padding: 0px 23px;
 }
-header li:active, header li:hover, header li:visited {
+/*для менюшки hover */
+.nav-wrapper li:active, .nav-wrapper li:hover, header li:visited {
 	color: #1197a3;
 	cursor: pointer;
 }
 
-header img{
+
+.nav-wrapper img{
 	width: 150px;
 }	
 .img-logo {
@@ -146,4 +148,27 @@ h4 {
 }
 ul li{
 	padding-bottom: 5px;
+}
+.circle {
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	line-height: 160px;
+	color: white;
+	background: #e6e6e6;
+	border-radius: 60px;
+
+
+}
+.circle i:hover,active {
+	color: #1197a3; 
+	cursor: pointer;
+}
+.images-delivery-man{
+	position: relative;
+	top: 10%;
+	left: 15%;
+	width: 85px;
+	height: 85px;
+	background: url(images/delivery-man.svg) no-repeat;
 }
