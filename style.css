@@ -10,11 +10,19 @@ header {
  	background-size: cover;
  	background-position: center;
 	position: relative;
-	padding-top: 10px; 
+
+}
+
+.nav-header-fixed {
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+
 }
 .nav-height-second-page{
 	min-height: 140px;
 }
+
 /*gradient*/
 .nav-background-gradient {
 	background: rgba(222,219,222,1);
@@ -25,7 +33,7 @@ header {
 	background: -ms-linear-gradient(top, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(to bottom, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedbde', endColorstr='#ffffff', GradientType=0 );
-	
+	min-height: 140px;
 /*and gradient*/
 	}
 .nav-wrapper li {
@@ -43,11 +51,35 @@ header {
 
 /*для менюшки hover */
 .nav-wrapper li:active, .nav-wrapper li:hover, header li:visited {
-	color: #ffffff;
+	color: white;
+	-webkit-text-stroke: 0.1px grey;
+
 	cursor: pointer;
 }
+.nav-wrapper i:active, .nav-wrapper i:hover,header i:visited{
+	color: #808080;
+}
 
-
+img {
+	width: 100%;
+}
+.products-page-img img{
+	height: 150px;
+	margin-top: 15px;
+}
+.products-page-p p, .products-page-p li {
+	margin: 10px auto;
+}
+.products-page-p li{
+	margin:15px 0px 20px 30px;
+	
+}
+.price-button {
+	margin-top: 20px;
+}
+.products-page {
+	padding:175px 0px 50px;
+}
 .nav-wrapper img{
 	width: 150px;
 }	
@@ -68,7 +100,7 @@ header {
 	height: 20px;
 	background: url(images/strelka-hover.svg) no-repeat;
 	position: relative;
-	top: 77vh;
+	top: 94vh;
 }
 .strelka:hover, .strelka:active{
 	background: url(images/strelka.svg) no-repeat;
@@ -83,8 +115,22 @@ header {
 
 .filter-check-mark{
 	padding-left: 70px;
-	
-
+}	
+.products,.basket-page,.shipping-and-payment-page,.about-us-page  {
+	padding-top: 150px; 
+}
+.basket-page h5 {
+	text-align: center;
+	margin: 30px auto 20px;
+}
+.basket-page button{
+	margin:30px auto;
+}
+/*для таблицы*/
+.bot{
+	padding: 2px 8px;
+	font-weight: bold;
+}
 
 }
 .font-size-check-mark,.button-see-all-products {
@@ -129,6 +175,9 @@ header {
 	font-size: 19px;
 	margin-bottom: 25px;
 }
+.products-card-one:hover {
+	box-shadow: 0px 10px 33px -5px rgba(0,0,0,0.75);
+}
 
 .products hr {
 	margin: 30px 0px;
@@ -144,12 +193,18 @@ header {
 	padding-top: 10px;
 	margin-top: 10px;
 }
-h4 {
+.products .l1 h4 {
 	text-transform: uppercase;
 	font-size: 20px;
     text-transform: uppercase;
     font-family: 'Just Another Hand', cursive;
     letter-spacing: 2px;
+}
+.products-page-p h4{
+	margin: 0px auto 30px;
+}
+.products-page-p h5 {
+	margin: 0;
 }
 .chevron-hover:hover{
 	color: #1197a3;
@@ -159,9 +214,15 @@ h4 {
 	margin-right: 10px;
 	margin-top: 10px;
 }
-.hover:hover{
+.hover:hover,.hover:visited,.hover:active {
 	color: #1197a3;
 	cursor: pointer;
+}
+.shipping-and-payment-page h5{
+	min-height: 120px;
+}
+.magrin-top {
+	margin-top: 50px;
 }
 
 .circle {
@@ -172,11 +233,13 @@ h4 {
 	background: #e6e6e6;
 	border-radius: 60px;
 	margin:0px auto;
+	position: relative;
 }
 .circle i:hover {
 	color: #1197a3; 
 	cursor: pointer;
 }
+
 .images-delivery-man{
 	position: relative;
 	top: 18%;
@@ -243,9 +306,7 @@ h4 {
 	background: url(images/credit-card-hover.svg) no-repeat;
 	cursor: pointer;
 }
-h3{
-	margin-top: 50px;
-}
+
 .images-receipt-card {
 	position: relative;
 	top: 20%;
@@ -272,4 +333,47 @@ h3{
 }
 .margin-h6 {
 	margin-top: 130px;
+}
+.about-us-block {
+	border: 1px solid grey;
+	margin: 50px auto;
+	/*box-shadow: 0px 0px 31px 3px rgba(199,199,199,1);*/
+	text-align: center;
+	width: 50%;
+	padding: 50px 70px;
+	position: relative;
+	
+ 	background: rgba(255, 255, 255, 0); 
+}
+.about-us-block p{
+	margin-bottom: 20px;
+
+}
+.about-us-block-color {
+	background: #e1f5f6;
+	padding:25px 0px;
+	
+
+}	
+.about-us-text {
+	position: absolute;
+	top: -26px;
+	left: 44%;
+	padding: 10px;
+	background:#e1f5f6;
+	font-size: 20px;
+}
+#hint-block {
+	padding: 10px 15px;
+	min-height: 50px;
+	width: 400px;
+	background:rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 0px 37px 2px rgba(184,184,184,1);
+	position: absolute;
+	z-index: 2;
+	top: 70px;
+	left: 60px;
+	line-height: 25px;
+	color: black;
+	display: none;
 }

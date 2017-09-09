@@ -16,35 +16,89 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<header>
+<div class="nav-header-fixed">
 		<div class="container ">
-		<div class="navbar-fixed">
-			<div class="nav-wrapper">
-			
-					<a href="#!" class="brand-logo">
+						<a href="index.html">
 						<div class="img-logo"></div>
 					</a>		
 		
-				<ul class="hide-on-med-and-down right ">
-					<li>home</li>
-					<a href="#products-page"><li>products</li></a>
-					<a href="#shipping-and-payment-page"><li>shipping and payment</li></a>
-					<a href="#about-us-page"><li>about us</li></a>
-					<a href="#contacts-page"><li>contacts</li></a>
-					<a href="basket-page"><li><i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i></li><div class="suma"></div></a>
+				<ul class="nav-wrapper  right ">
+					<a href="index.html"><li>home</li></a>
+					<a href="index.html"><li>products</li></a>
+					<a href="index.html"><li>shipping and payment</li></a>
+					<a href="index.html"><li>about us</li></a>
+					<a href="index.html"><li>contacts</li></a>
+					<a href="#"><li><i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i></li><div class="suma"></div></a>
 				</ul>
-			</div>
-		</div>
-		</div>	
-		<div class="row">
-			<div class="col l12 center"><a href="#products-page"><div class="strelka"></div></a>
-		</div>
-	</header>	
+		
+	
+	</div>
+</div>
+
+<div class="container basket-page">
+    
+      <div class="row">
+      <div class="col l12"> 
+       <h5>Корзина</h5>		
+            <table>
+              <tr class="grey lighten-3">
+                <th>Название</th>
+                <th>Кол-во</th>
+                <th>Цена</th>
+              </tr>
+    		  <tbody>
+              <tr>
+                <td>
+                	<a class="z-depth-1 cyan white-text bot" href="#">x</a> <span>Зимняя мериносовая шапочка</span>
+                </td>
+                <td class="bold">
+                	<a class="z-depth-1 cyan white-text bot" href="#">-</a><span> 1 </span>
+                	<a class="z-depth-1 cyan white-text bot" href="#">+</a>
+                </td>
+                <td>595 грн.</td>
+              </tr>
+              <tr class="grey lighten-3">
+                <td colspan="2">Сумма:</td>
+                <td>595 грн.</td>
+              </tr>
+            </tbody>
+            </table>
+           	</div>
+
+	</div>
+	<h5>Заполнить форму заказа</h5>	
+        <div class="row">
+            <div class="col l12">
+              <div class="input-field col s12">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">ФИО:</label>
+              </div>
+            </div>
+            <div class="col l12">
+              <div class="input-field col s12">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Телефон:</label>
+              </div>
+            </div> 
+            <div class="col l12">
+              <div class="input-field col s12">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Email:</label>
+              </div>
+            </div>
+            
+                <div class="col l3 right">
+                <button class="button-see-all-products">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                </div>
+  	      
+        </div> 	
+</div>
+
 	<footer class="page-footer grey lighten-4 grey-text text-darken-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="hover">MV_Studio</h5>
+                <a href="index.html"><h5 class="hover">MV_Studio</h5></a>
                 <p>Якісний, сучасний та зручний одяг для всієї родини.</p>
               </div>
               <div class="col l4 offset-l2 s12">

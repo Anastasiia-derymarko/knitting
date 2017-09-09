@@ -17,32 +17,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+<a name="home-page"></a>
 	<header>
+	
+	<div class="nav-header-fixed">
 		<div class="container ">
-		<div class="navbar-fixed">
-			<div class="nav-wrapper">
+	
+		
+	
 			
-					<a href="#!" class="brand-logo">
+					<a href="#home-page">
 						<div class="img-logo"></div>
 					</a>		
 		
-				<ul class="hide-on-med-and-down right ">
-					<li>home</li>
+				<ul class="nav-wrapper  right ">
+					<a href="#home-page"><li>home</li></a>
 					<a href="#products-page"><li>products</li></a>
 					<a href="#shipping-and-payment-page"><li>shipping and payment</li></a>
 					<a href="#about-us-page"><li>about us</li></a>
 					<a href="#contacts-page"><li>contacts</li></a>
-					<a href="basket-page"><li><i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i></li><div class="suma"></div></a>
+					<a href="basket-page.html"><li><i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i></li><div class="suma"></div></a>
 				</ul>
-			</div>
-		</div>
-		</div>	
-		<div class="row">
+		
+	
+	</div>
+	</div>
+
+		
 			<div class="col l12 center"><a href="#products-page"><div class="strelka"></div></a>
-		</div>
+			</div>
 	</header>
-	<div class="products">
 	<a name="products-page"></a>
+	<div class="products">
+
 		<div class="filter clearfix grey lighten-4">
 <!--Вертикальное выравнивание не работает   -->
 			<div class="container">
@@ -51,7 +58,7 @@
 						      <input type="checkbox" id="test5" />
 						      <label for="test5"><span class="font-size-check-mark">Women</span></label>
 						    </span>
-		<!--по умолчанию уже стоит галочка на вумен !убарть  -->
+		<!--по умолчанию уже стоит галочка, на вумен !убарть  -->
 						    <span class="filter-check-mark">
 						      <input type="checkbox" id="test6" checked="checked"/>
 						      <label for="test6"><span class="font-size-check-mark">children</span></label>
@@ -73,14 +80,16 @@
 						</div>
 					</div>
 					<div class="col l4">
-						<div class="products-card-one clearfix grey lighten-4">
-							<img src="images/schapochka_dvoynaya_merinosovaya-300x300.jpg" alt="">
-							<span>Зимняя мериносовая шапочка</span>
-							<div class="price-block">
-								<h5 class="price">595 грн.</h5>
-								<a class="btn-floating btn-large waves-effect waves-light right hover-color"><i class="material-icons">local_grocery_store</i></a>
+						<a href="products-page.html">
+							<div class="products-card-one clearfix grey lighten-4">
+								<img src="images/schapochka_dvoynaya_merinosovaya-300x300.jpg" alt="">
+								<span>Зимняя мериносовая шапочка</span>
+								<div class="price-block">
+									<h5 class="price">595 грн.</h5>
+									<a class="btn-floating btn-large waves-effect waves-light right hover-color"><i class="material-icons">local_grocery_store</i></a>
+								</div>
 							</div>
-						</div>	
+						</a>	
 					</div>
 					<div class="col l4">
 						<div class="products-card-one clearfix grey lighten-4">
@@ -133,7 +142,103 @@
 						</div>
 					</div>
 			</div> <!-- end row -->
-			
+			<a name="shipping-and-payment-page"></a>
+				<div class="row center shipping-and-payment-page">
+	<output>
+				<h3>Доставка</h3>
+				<div class="col l1"></div>
+				<div class="col l2">
+					<h5>Платформа метро</h5>
+					<div class="circle" id="circle">
+						<div id="hint-block">
+							При доставці замовлення кур’єром до станції метро (платформа) – <span class="bold">безкошовно.</span>
+						</div>
+						<i class="fa fa-subway fa-5x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="col l2">
+					<h5>Кур’єром за вказаною адресою</h5>
+					<div class="circle">
+					<div class="images-delivery-man"></div>
+					<div id="hint-block">
+							При доставці замовлення кур’єром до станції метро (платформа) – <span class="bold">безкошовно.</span>
+					</div>	
+					</div>	
+				</div>
+				<div class="col l2">
+					<h5>«Нова пошта»</h5>
+					<div class="circle">
+					<div class="images-new-post"></div>
+					</div>	
+				</div>
+				<div class="col l2">
+					<h5>«Укрпошта»</h5>
+					<div class="circle">
+					<div class="images-ukr-post"></div>
+					</div>	
+				</div>
+				<div class="col l2">
+					<h5>Замовлення на суму від <br>1100 грн</h5>
+					<div class="circle">
+					<div class="images-free-post"></div>
+					</div>
+				</div>
+				<div class="col l1"></div>
+		
+		
+			<div class="col l12 magrin-top"><h3>Оплата</h3></div>
+			<div class="col l4">
+				<h5>Готівка</h5>
+				<div class="circle">
+					<div class="images-cash"></div>
+				</div>
+			</div>
+			<div class="col l4">
+				<h5>Банківський переказ</h5>
+				<div class="circle">
+					<div class="images-credit-card"></div>
+				</div>
+			</div>
+			<div class="col l4">
+				<h5>Оплата при отриманні</h5>
+				<div class="circle">
+					<div class="images-receipt-card" data-title="Доставка з післяплатою"></div>
+				
+
+				</div>
+			</div>
+	</output>		
+	</div>
+<!-- 		<h6 class="margin-h6"><span class="bold">Зверніть увагу:</span></h6>
+		<ul class="note-ship-on-and-pay-page">
+			<li> Доставка замовлень у неділю та святкові дні транспортними компаніями не здійснюється, кур’єром по м. Києву – 80,00 грн.</li>
+			<li> Відправка товарів здійснюється протягом 1-3 днів після оформлення замовлення (якщо не було інших домовленностей).</li>
+			<li> Послуги доставки, зворотньої доставки (грошовий переказ) сплачує покупець в повному обсязі, незалежно від суми замовлення (якщо не було інших домовленностей).</li>
+			<li> Комплектація  і зовнішній вигляд товару мають бути перевірені покупцем під час його отримання. Після отримання замовлення претензіі стосовно характеристик та зовнішніх дефектів товару не приймаються.</li>
+			<li> Зберігайте квитанцію до підтвердження надходження грошей на розрахунковий рахунок. Для прискорення опрацювання замовлення, Ви можете повідомити нам суму і час оплати.</li>
+		</ul> -->
+</output>
+		</div>
+		
+		<a name="about-us-page"></a>
+	<div class="about-us-page">
+		<div class="about-us-block-color">
+			<div class="about-us-block ">
+			<div class="about-us-text"><span class="bold">ABOUT-US</span></div>
+				<p>Мене звуть Оксана.</p>
+
+				<p>Я – мама чотирьох діточок. І, як будь-яка мама знаю, як важко буває іноді купити красивий, безпечний, якісний і недорогий одяг для малечі, адже дітки так швидко ростуть. Я для себе знайшла вихід – я створюю речі сама.</p>
+
+				<p>Одним із моїх захоплень (а їх у мене багато ) є в’язання.</p>
+
+				<p>Це захоплення поступово перетворюється на дещо більше ніж розваги і відпочинок. На цей час – це вже моя улюблена справа – моя робота.</p>
+
+				<p>Для своїх виробів я використовую тільки якісну, перевірену пряжу різних виробників, це дає змогу створювати вироби в різних цінових сегментах. На сторінці кожного товару, що є в наявності, указана інформація стосовно пряжі, з якої виготовлена річ.</p>
+
+				<p>На сторінках цього магазину Ви знайдете багато товарів, які я зв’язала на замовлення. Не дивлячись на те, що їх немає в наявності, я з задоволенням повторю для Вас будь-яку річ, окрім тих, де є позначка “точне повторення неможливе”.</p>
+			</div>
+		</div>
+	</div>
 		</div> <!-- end container -->
 
 	 <footer class="page-footer grey lighten-4 grey-text text-darken-2">
@@ -141,7 +246,7 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="hover">MV_Studio</h5>
+                <a href="#home-page"><h5 class="hover">MV_Studio</h5></a>
                 <p>Якісний, сучасний та зручний одяг для всієї родини.</p>
               </div>
               <div class="col l4 offset-l2 s12">
@@ -175,6 +280,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
 
 </script>
-<script type="text/javascript" src="js/materialize.min.js"></script>	
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/js.js"></script>	
 </body>
 </html>	
