@@ -22,31 +22,21 @@ header {
 .nav-height-second-page{
 	min-height: 140px;
 }
-
-/*gradient*/
-.nav-background-gradient {
-	background: rgba(222,219,222,1);
-	background: -moz-linear-gradient(top, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(222,219,222,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-	background: -webkit-linear-gradient(top, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-	background: -o-linear-gradient(top, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-	background: -ms-linear-gradient(top, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(to bottom, rgba(222,219,222,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedbde', endColorstr='#ffffff', GradientType=0 );
-	min-height: 140px;
-/*and gradient*/
-	}
+.nav-wrapper {
+	font-size: 0px;
+}
 .nav-wrapper li {
 	text-transform: uppercase;
-	font-size: 30px;
-	line-height: 95px;
+	font-size: 2vw; 
+	/*vw Адаптивный текст*/
+	line-height: 9vw;
 	font-family: 'Just Another Hand', cursive;
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-align: right;
 	color: #1197a3;
 	display: inline-block;
-	padding: 0px 23px;
+	padding-left: 20px;
 }
 
 /*для менюшки hover */
@@ -85,12 +75,10 @@ img {
 }	
 .img-logo {
 	display: inline-block;
-	height: 125px;
-	width: 200px;
-	background: url(images/method-hover.svg) no-repeat;
+	width: 15%;
 }	 
 .img-logo:hover, .img-logo:active{
-	background: url(images/170.130.svg) no-repeat;
+	/*background: url(images/170.130.svg) no-repeat;*/
 	cursor: pointer;
 }
 .strelka {
@@ -172,7 +160,7 @@ img {
 }
 .products-card-one {
 	padding: 15px;
-	font-size: 19px;
+	font-size: 1.5vw;
 	margin-bottom: 25px;
 }
 .products-card-one:hover {
@@ -187,6 +175,7 @@ img {
 	display: inline-block;
 	font-weight: bold;
 	color: #1197a3;
+	font-size: 2vw;
 }
 .price-block {
 	border-top: 1px solid #ccd2d3;
@@ -219,7 +208,9 @@ img {
 	cursor: pointer;
 }
 .shipping-and-payment-page h5{
-	min-height: 120px;
+
+	font-size: 2vw;
+	line-height: 5vw;
 }
 .magrin-top {
 	margin-top: 50px;
@@ -337,16 +328,14 @@ img {
 .about-us-block {
 	border: 1px solid grey;
 	margin: 50px auto;
-	/*box-shadow: 0px 0px 31px 3px rgba(199,199,199,1);*/
 	text-align: center;
-	width: 50%;
 	padding: 50px 70px;
 	position: relative;
 	
  	background: rgba(255, 255, 255, 0); 
 }
 .about-us-block p{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 }
 .about-us-block-color {
@@ -376,4 +365,7 @@ img {
 	line-height: 25px;
 	color: black;
 	display: none;
+}
+@media screen and (max-width: 1210px) {
+	
 }
