@@ -1,50 +1,11 @@
-
-//  массив доствки 
-var delivery = [
-		
-		{
-			"name": "Платформа метро",
-			"hint-block":"При доставці замовлення кур’єром до станції метро (платформа) – безкошовно."
-			"images" :
-		}
-
-]
-var output = document.getElementsByTagName('output')[0];
-
-var out = '';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.getElementById('circle').onmouseover = function(){mouseOver()};
-document.getElementById('circle').onmouseout = function(){mouseOut()};
-
-function mouseOver(){
-	document.getElementById('hint-block').style.display="block";
-
-}	
-
-function mouseOut(){
-	document.getElementById('hint-block').style.display='none'; 
-
-}	
+var circle = document.getElementsByClassName('circle');
+for (var i=0; i<circle.length; i++){
+	circle[i].onmouseenter = f1;
+	circle[i].onmouseleave = f2;
+}
+function f1() {
+	this.querySelector('p').style.display = 'block';
+}
+function f2() {
+	this.querySelector('p').style.display = 'none';
+}

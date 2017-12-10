@@ -352,7 +352,7 @@ img {
 	background:#e1f5f6;
 	font-size: 20px;
 }
-#hint-block {
+.hint-block {
 	padding: 10px 15px;
 	min-height: 50px;
 	width: 400px;
